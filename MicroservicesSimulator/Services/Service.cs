@@ -4,20 +4,23 @@ using OpenTelemetry;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 
+using System.Collections;
+using MicroservicesSimulator.Services.States;
+
 namespace MicroservicesSimulator.Services;
 
 public class Service
 {
     public string Name { get; set; }
-    public State State { get; set; }
-    private TracerProvider _tracerProvider;
+    internal IServiceState State;
 
-    private ILogger _logger;
+    // private ILogger _logger;
 
-    public Service(string name, State state = State.Normal)
+    public Service(string name, IServiceState state)
     {
         Name = name;
         State = state;
+        // State = state;
         // _tracerProvider = BuildTraceProvider();
 
         // var loggerFactory = LoggerFactory.Create(build => 
@@ -27,27 +30,33 @@ public class Service
         // _logger.LogInformation("yes tout va bien");
     }
 
-    public void Call()
+    public Service(string name)
     {
-        var myActivitySource = new ActivitySource(Name);
-        Thread.Sleep(GetRandomLantency());
-        using var activity = myActivitySource.StartActivity($"Span from {Name}");
-        // _logger.LogInformation("yes info");
-        // _logger.LogTrace("yes trace");
-        
-        // activity?.Stop();
+        Name = name;
+        State = new NormalState();
+        State.UpdateState(this);
     }
 
-    private int GetRandomLantency()
+    public void Call(Queue<Service>? services)
     {
-        Random random = new Random();
-        if (State == State.Normal)
+        // var myActivitySource = new ActivitySource(Name);
+        // Thread.Sleep(GetRandomLantency());
+        // using var activity = myActivitySource.StartActivity($"Span from {Name}");
+
+        if (services == null)
         {
-            return random.Next(1, 20);
+            return;
         }
-        return random.Next(100, 200);
+        if (services.Count == 0)
+        {
+            State.Call(this, null);
+        }
+        else
+        {
+            State.Call(this, services);
+        }
     }
-    
+
     private TracerProvider BuildTraceProvider()
     {
         return Sdk.CreateTracerProviderBuilder()

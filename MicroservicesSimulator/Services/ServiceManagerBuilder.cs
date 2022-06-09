@@ -4,27 +4,28 @@ using OpenTelemetry.Trace;
 
 namespace MicroservicesSimulator.Services;
 
-public class LinkedServiceCallBuilder
+public class ServiceManagerBuilder
 {
 
     private List<Service> _services;
 
-    public LinkedServiceCallBuilder()
+    public ServiceManagerBuilder()
     {
+        _services = new List<Service>();
         WithNumberOfServices(3);
     }
 
-    public LinkedServiceCallBuilder WithNumberOfServices(int nb)
+    public ServiceManagerBuilder WithNumberOfServices(int nb)
     {
-        if (nb < 2)
-        {
-            return this;
-        }
+        // if (nb < 2)
+        // {
+        //     return this;
+        // }
 
         _services = new List<Service>();
         for (var i = 0; i < nb; i++)
         {
-            _services.Add(new Service($"service-{i}"));
+            _services.Add(new Service($"service-{i+1}"));
         }
 
         return this;
@@ -35,7 +36,7 @@ public class LinkedServiceCallBuilder
         var traceProviderBuilder = Sdk.CreateTracerProviderBuilder()
             .SetResourceBuilder(
                 ResourceBuilder.CreateDefault()
-                    .AddService(serviceName: "Microservices-Simulator")
+                    .AddService(serviceName: "Microservices-Simulator-1")
             )
             .AddZipkinExporter()
             .AddJaegerExporter()
@@ -45,12 +46,12 @@ public class LinkedServiceCallBuilder
         {
             traceProviderBuilder.AddSource(service.Name);
         }
-
+        
         return traceProviderBuilder.Build();
     }
     
-    public LinkedServiceCall Build()
+    public ServiceManager Build()
     {
-        return new LinkedServiceCall(_services, BuildTraceProvider());
+        return new ServiceManager(_services, BuildTraceProvider());
     }
 }
