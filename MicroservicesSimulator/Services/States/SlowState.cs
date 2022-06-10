@@ -3,7 +3,6 @@ namespace MicroservicesSimulator.Services.States;
 
 public class SlowState : UpState
 {
-    
     public override void UpdateState(Service service)
     {
         var random = new Random();

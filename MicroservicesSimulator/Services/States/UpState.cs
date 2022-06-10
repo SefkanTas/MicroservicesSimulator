@@ -1,7 +1,4 @@
 using System.Diagnostics;
-using OpenTelemetry;
-using OpenTelemetry.Resources;
-using OpenTelemetry.Trace;
 
 namespace MicroservicesSimulator.Services.States;
 

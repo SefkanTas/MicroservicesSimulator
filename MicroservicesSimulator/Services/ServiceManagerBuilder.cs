@@ -1,3 +1,4 @@
+using MicroservicesSimulator.Services.States;
 using OpenTelemetry;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
@@ -6,29 +7,41 @@ namespace MicroservicesSimulator.Services;
 
 public class ServiceManagerBuilder
 {
-
     private List<Service> _services;
-
+    
     public ServiceManagerBuilder()
     {
         _services = new List<Service>();
-        WithNumberOfServices(3);
     }
 
-    public ServiceManagerBuilder WithNumberOfServices(int nb)
+    private Service CreateService(string name, IServiceState state) => new Service(name, state);
+    
+    private ServiceManagerBuilder WithServices(int nb, IServiceState state)
     {
-        // if (nb < 2)
-        // {
-        //     return this;
-        // }
-
-        _services = new List<Service>();
+        var servicesCount = _services.Count;
+        
         for (var i = 0; i < nb; i++)
         {
-            _services.Add(new Service($"service-{i+1}"));
+            var service = CreateService($"service-{servicesCount + i + 1}", state);
+            _services.Add(service);
         }
 
         return this;
+    }
+
+    public ServiceManagerBuilder WithNormalServices(int nb)
+    {
+        return WithServices(nb, new NormalState());
+    }
+
+    public ServiceManagerBuilder WithSlowServices(int nb)
+    {
+        return WithServices(nb, new SlowState());
+    }
+    
+    public ServiceManagerBuilder WithDownServices(int nb)
+    {
+        return WithServices(nb, new DownState());
     }
 
     private TracerProvider BuildTraceProvider()
@@ -36,7 +49,7 @@ public class ServiceManagerBuilder
         var traceProviderBuilder = Sdk.CreateTracerProviderBuilder()
             .SetResourceBuilder(
                 ResourceBuilder.CreateDefault()
-                    .AddService(serviceName: "Microservices-Simulator-1")
+                    .AddService(serviceName: "Microservices-Simulator")
             )
             .AddZipkinExporter()
             .AddJaegerExporter()

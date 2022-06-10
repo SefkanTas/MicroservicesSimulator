@@ -1,9 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using MicroservicesSimulator.Services;
 
-using MicroservicesSimulator.Services;
+namespace MicroservicesSimulator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
 
-Console.WriteLine("Hello, World!");
-
-var serviceManagerBuilder = new ServiceManagerBuilder();
-var serviceManager = serviceManagerBuilder.WithNumberOfServices(10).Build();
-serviceManager.Run(10);
+            var serviceManagerBuilder = new ServiceManagerBuilder();
+            var serviceManager = serviceManagerBuilder
+                // .WithDownServices(1)
+                .WithNormalServices(10)
+                .Build();
+            serviceManager.Run(1);
+        }
+    }
+}
