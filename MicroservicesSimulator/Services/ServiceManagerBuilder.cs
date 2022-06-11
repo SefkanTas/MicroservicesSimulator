@@ -49,7 +49,7 @@ public class ServiceManagerBuilder
         var traceProviderBuilder = Sdk.CreateTracerProviderBuilder()
             .SetResourceBuilder(
                 ResourceBuilder.CreateDefault()
-                    .AddService(serviceName: "Microservices-Simulator")
+                    .AddService(serviceName: "Microservices-Simulator-test")
             )
             .AddZipkinExporter()
             .AddJaegerExporter()
