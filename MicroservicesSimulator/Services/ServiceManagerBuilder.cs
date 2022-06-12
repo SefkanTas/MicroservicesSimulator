@@ -8,10 +8,12 @@ namespace MicroservicesSimulator.Services;
 public class ServiceManagerBuilder
 {
     private List<Service> _services;
+    private string _serviceName;
     
     public ServiceManagerBuilder()
     {
         _services = new List<Service>();
+        _serviceName = "Microservices-Simulator";
     }
 
     private Service CreateService(string name, IServiceState state) => new Service(name, state);
@@ -29,14 +31,14 @@ public class ServiceManagerBuilder
         return this;
     }
 
-    public ServiceManagerBuilder WithNormalServices(int nb)
+    public ServiceManagerBuilder WithNormalServices(int nb, bool isStable = false) 
     {
-        return WithServices(nb, new NormalState());
+        return WithServices(nb, new NormalState(isStable));
     }
 
-    public ServiceManagerBuilder WithSlowServices(int nb)
+    public ServiceManagerBuilder WithSlowServices(int nb, bool isStable = false)
     {
-        return WithServices(nb, new SlowState());
+        return WithServices(nb, new SlowState(isStable));
     }
     
     public ServiceManagerBuilder WithDownServices(int nb)
@@ -49,11 +51,11 @@ public class ServiceManagerBuilder
         var traceProviderBuilder = Sdk.CreateTracerProviderBuilder()
             .SetResourceBuilder(
                 ResourceBuilder.CreateDefault()
-                    .AddService(serviceName: "Microservices-Simulator-test")
+                    .AddService(serviceName: _serviceName)
             )
             .AddZipkinExporter()
-            .AddJaegerExporter()
-            .AddConsoleExporter();
+            .AddJaegerExporter();
+            // .AddConsoleExporter();
 
         foreach (var service in _services)
         {
@@ -61,6 +63,12 @@ public class ServiceManagerBuilder
         }
         
         return traceProviderBuilder.Build();
+    }
+
+    public ServiceManagerBuilder WithServiceName(string name)
+    {
+        _serviceName = name;
+        return this;
     }
     
     public ServiceManager Build()

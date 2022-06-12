@@ -3,8 +3,16 @@ namespace MicroservicesSimulator.Services.States;
 
 public class SlowState : UpState
 {
+    
+    public SlowState(bool isStable = false):base(isStable)
+    { }
+    
     public override void UpdateState(Service service)
     {
+        if (IsStable)
+        {
+            return;
+        }
         var random = new Random();
         var number = random.Next(1, 100);
         switch (number)

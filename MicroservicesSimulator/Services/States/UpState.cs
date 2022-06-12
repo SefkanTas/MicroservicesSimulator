@@ -1,9 +1,20 @@
 using System.Diagnostics;
+using OpenTelemetry;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
 
 namespace MicroservicesSimulator.Services.States;
 
 public abstract class UpState : IServiceState
 {
+
+    internal bool IsStable;
+
+    public UpState(bool isStable = false)
+    {
+        IsStable = isStable;
+    }
+
     public void Call(Service service, Queue<Service>? nextServices)
     {
         var myActivitySource = new ActivitySource(service.Name);

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1090px" preserveAspectRatio="none" style="width:1108px;height:1090px;background:#FFFFFF;" version="1.1" viewBox="0 0 1108 1090" width="1108px" zoomAndPan="magnify"><defs/><g><!--MD5=[648e1a48ac9435c7b9b36075596861da]
+cluster MicroservicesSimulator--><polygon fill="#FFFFFF" points="16,33,189,33,196,56.6094,1091,56.6094,1091,1083,16,1083,16,33" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="196" y1="56.6094" y2="56.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="167" x="20" y="49.5332">MicroservicesSimulator</text><!--MD5=[cdfd548b3455e70392372b1f27091970]
+cluster Services--><polygon fill="#FFFFFF" points="235,77,303,77,310,100.6094,1067,100.6094,1067,1059,235,1059,235,77" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="235" x2="310" y1="100.6094" y2="100.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="62" x="239" y="93.5332">Services</text><!--MD5=[c6a10d839b5fce7952615c7fa3728354]
+cluster States--><polygon fill="#FFFFFF" points="290,562,340,562,347,585.6094,1012,585.6094,1012,1035,290,1035,290,562" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="290" x2="347" y1="585.6094" y2="585.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="44" x="294" y="578.5332">States</text><!--MD5=[175f95e045c1a44aed0b30df3abe0e5c]
+class Program--><rect codeLine="71" fill="#F8F8FF" height="53.8359" id="Program" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="143" x="32.5" y="186"/><ellipse cx="75.85" cy="202" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M78.6156,197.875 Q78.7719,197.6563 78.9594,197.5469 Q79.1469,197.4375 79.3656,197.4375 Q79.7406,197.4375 79.975,197.7031 Q80.2094,197.9531 80.2094,198.5625 L80.2094,200.0156 Q80.2094,200.625 79.975,200.8906 Q79.7406,201.1563 79.3656,201.1563 Q79.0219,201.1563 78.8188,200.9531 Q78.6156,200.7656 78.5063,200.25 Q78.4594,199.8906 78.2719,199.7031 Q77.9438,199.3281 77.3344,199.1094 Q76.725,198.8906 76.1,198.8906 Q75.3344,198.8906 74.6938,199.2188 Q74.0688,199.5469 73.5688,200.2969 Q73.0844,201.0469 73.0844,202.0781 L73.0844,203.1719 Q73.0844,204.4063 73.975,205.2344 Q74.8656,206.0469 76.4594,206.0469 Q77.3969,206.0469 78.0531,205.7969 Q78.4438,205.6406 78.8656,205.2031 Q79.1313,204.9375 79.2719,204.8594 Q79.4281,204.7813 79.6313,204.7813 Q79.9594,204.7813 80.2094,205.0469 Q80.475,205.2969 80.475,205.6406 Q80.475,205.9844 80.1313,206.3906 Q79.6313,206.9688 78.8344,207.2969 Q77.7563,207.75 76.4594,207.75 Q74.9438,207.75 73.7406,207.125 Q72.7563,206.625 72.0688,205.5625 Q71.3813,204.4844 71.3813,203.2031 L71.3813,202.0469 Q71.3813,200.7188 71.9906,199.5781 Q72.6156,198.4219 73.7094,197.8125 Q74.8031,197.1875 76.0375,197.1875 Q76.7719,197.1875 77.4125,197.3594 Q78.0688,197.5156 78.6156,197.875 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="48" x="96.15" y="206.9102">Program</text><line style="stroke:#000000;stroke-width:1.5;" x1="33.5" x2="174.5" y1="218" y2="218"/><ellipse cx="43.5" cy="229" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="117" x="52.5" y="233.4189">Main(args: string[]): void</text><!--MD5=[dbb8b4f13c7b21394f9d757e58732f45]
+class Service--><rect codeLine="37" fill="#F8F8FF" height="117.1797" id="Service" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="210" x="546" y="390"/><ellipse cx="626.75" cy="406" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M629.5156,401.875 Q629.6719,401.6563 629.8594,401.5469 Q630.0469,401.4375 630.2656,401.4375 Q630.6406,401.4375 630.875,401.7031 Q631.1094,401.9531 631.1094,402.5625 L631.1094,404.0156 Q631.1094,404.625 630.875,404.8906 Q630.6406,405.1563 630.2656,405.1563 Q629.9219,405.1563 629.7188,404.9531 Q629.5156,404.7656 629.4063,404.25 Q629.3594,403.8906 629.1719,403.7031 Q628.8438,403.3281 628.2344,403.1094 Q627.625,402.8906 627,402.8906 Q626.2344,402.8906 625.5938,403.2188 Q624.9688,403.5469 624.4688,404.2969 Q623.9844,405.0469 623.9844,406.0781 L623.9844,407.1719 Q623.9844,408.4063 624.875,409.2344 Q625.7656,410.0469 627.3594,410.0469 Q628.2969,410.0469 628.9531,409.7969 Q629.3438,409.6406 629.7656,409.2031 Q630.0313,408.9375 630.1719,408.8594 Q630.3281,408.7813 630.5313,408.7813 Q630.8594,408.7813 631.1094,409.0469 Q631.375,409.2969 631.375,409.6406 Q631.375,409.9844 631.0313,410.3906 Q630.5313,410.9688 629.7344,411.2969 Q628.6563,411.75 627.3594,411.75 Q625.8438,411.75 624.6406,411.125 Q623.6563,410.625 622.9688,409.5625 Q622.2813,408.4844 622.2813,407.2031 L622.2813,406.0469 Q622.2813,404.7188 622.8906,403.5781 Q623.5156,402.4219 624.6094,401.8125 Q625.7031,401.1875 626.9375,401.1875 Q627.6719,401.1875 628.3125,401.3594 Q628.9688,401.5156 629.5156,401.875 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="40" x="647.25" y="410.9102">Service</text><line style="stroke:#000000;stroke-width:1.5;" x1="547" x2="755" y1="422" y2="422"/><ellipse cx="557" cy="433" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="60" x="566" y="437.4189">Name: string</text><polygon fill="none" points="557,442.8359,553,448.8359,561,448.8359" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="566" y="451.2549">State: IServiceState</text><line style="stroke:#000000;stroke-width:1.5;" x1="547" x2="755" y1="457.6719" y2="457.6719"/><ellipse cx="557" cy="468.6719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="566" y="473.0908">this(name: string)</text><ellipse cx="557" cy="482.5078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="184" x="566" y="486.9268">this(name: string, state: IServiceState)</text><ellipse cx="557" cy="496.3438" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="566" y="500.7627">Call(services: Queue&lt;Service&gt;): void</text><!--MD5=[c5a32559b19dfcbab7b8df17ddbaf41c]
+class ServiceManager--><rect codeLine="46" fill="#F8F8FF" height="103.3438" id="ServiceManager" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="318" x="733" y="161.5"/><ellipse cx="843.75" cy="177.5" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M846.5156,173.375 Q846.6719,173.1563 846.8594,173.0469 Q847.0469,172.9375 847.2656,172.9375 Q847.6406,172.9375 847.875,173.2031 Q848.1094,173.4531 848.1094,174.0625 L848.1094,175.5156 Q848.1094,176.125 847.875,176.3906 Q847.6406,176.6563 847.2656,176.6563 Q846.9219,176.6563 846.7188,176.4531 Q846.5156,176.2656 846.4063,175.75 Q846.3594,175.3906 846.1719,175.2031 Q845.8438,174.8281 845.2344,174.6094 Q844.625,174.3906 844,174.3906 Q843.2344,174.3906 842.5938,174.7188 Q841.9688,175.0469 841.4688,175.7969 Q840.9844,176.5469 840.9844,177.5781 L840.9844,178.6719 Q840.9844,179.9063 841.875,180.7344 Q842.7656,181.5469 844.3594,181.5469 Q845.2969,181.5469 845.9531,181.2969 Q846.3438,181.1406 846.7656,180.7031 Q847.0313,180.4375 847.1719,180.3594 Q847.3281,180.2813 847.5313,180.2813 Q847.8594,180.2813 848.1094,180.5469 Q848.375,180.7969 848.375,181.1406 Q848.375,181.4844 848.0313,181.8906 Q847.5313,182.4688 846.7344,182.7969 Q845.6563,183.25 844.3594,183.25 Q842.8438,183.25 841.6406,182.625 Q840.6563,182.125 839.9688,181.0625 Q839.2813,179.9844 839.2813,178.7031 L839.2813,177.5469 Q839.2813,176.2188 839.8906,175.0781 Q840.5156,173.9219 841.6094,173.3125 Q842.7031,172.6875 843.9375,172.6875 Q844.6719,172.6875 845.3125,172.8594 Q845.9688,173.0156 846.5156,173.375 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="88" x="864.25" y="182.4102">ServiceManager</text><line style="stroke:#000000;stroke-width:1.5;" x1="734" x2="1050" y1="193.5" y2="193.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="741" y="201.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="120" x="753" y="208.9189">_services: List&lt;Service&gt;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="741" y="215.3359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="753" y="222.7549">_traceProvider: TracerProvider</text><line style="stroke:#000000;stroke-width:1.5;" x1="734" x2="1050" y1="229.1719" y2="229.1719"/><ellipse cx="744" cy="240.1719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="292" x="753" y="244.5908">this(services: List&lt;Service&gt;, tracerProvider: TracerProvider)</text><ellipse cx="744" cy="254.0078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="753" y="258.4268">Run(iteration: int): void</text><!--MD5=[c33e3d886743b3a6bc47382c82475202]
+class ServiceManagerBuilder--><rect codeLine="54" fill="#F8F8FF" height="200.1953" id="ServiceManagerBuilder" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="348" x="251" y="113"/><ellipse cx="357.25" cy="129" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M360.0156,124.875 Q360.1719,124.6563 360.3594,124.5469 Q360.5469,124.4375 360.7656,124.4375 Q361.1406,124.4375 361.375,124.7031 Q361.6094,124.9531 361.6094,125.5625 L361.6094,127.0156 Q361.6094,127.625 361.375,127.8906 Q361.1406,128.1563 360.7656,128.1563 Q360.4219,128.1563 360.2188,127.9531 Q360.0156,127.7656 359.9063,127.25 Q359.8594,126.8906 359.6719,126.7031 Q359.3438,126.3281 358.7344,126.1094 Q358.125,125.8906 357.5,125.8906 Q356.7344,125.8906 356.0938,126.2188 Q355.4688,126.5469 354.9688,127.2969 Q354.4844,128.0469 354.4844,129.0781 L354.4844,130.1719 Q354.4844,131.4063 355.375,132.2344 Q356.2656,133.0469 357.8594,133.0469 Q358.7969,133.0469 359.4531,132.7969 Q359.8438,132.6406 360.2656,132.2031 Q360.5313,131.9375 360.6719,131.8594 Q360.8281,131.7813 361.0313,131.7813 Q361.3594,131.7813 361.6094,132.0469 Q361.875,132.2969 361.875,132.6406 Q361.875,132.9844 361.5313,133.3906 Q361.0313,133.9688 360.2344,134.2969 Q359.1563,134.75 357.8594,134.75 Q356.3438,134.75 355.1406,134.125 Q354.1563,133.625 353.4688,132.5625 Q352.7813,131.4844 352.7813,130.2031 L352.7813,129.0469 Q352.7813,127.7188 353.3906,126.5781 Q354.0156,125.4219 355.1094,124.8125 Q356.2031,124.1875 357.4375,124.1875 Q358.1719,124.1875 358.8125,124.3594 Q359.4688,124.5156 360.0156,124.875 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="127" x="377.75" y="133.9102">ServiceManagerBuilder</text><line style="stroke:#000000;stroke-width:1.5;" x1="252" x2="598" y1="145" y2="145"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259" y="153"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="120" x="271" y="160.4189">_services: List&lt;Service&gt;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259" y="166.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="271" y="174.2549">_serviceName: string</text><line style="stroke:#000000;stroke-width:1.5;" x1="252" x2="598" y1="180.6719" y2="180.6719"/><ellipse cx="262" cy="191.6719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="25" x="271" y="196.0908">this()</text><ellipse cx="262" cy="205.5078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="322" x="271" y="209.9268">WithNormalServices(nb: int, isStable: bool): ServiceManagerBuilder</text><ellipse cx="262" cy="219.3438" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="314" x="271" y="223.7627">WithSlowServices(nb: int, isStable: bool): ServiceManagerBuilder</text><ellipse cx="262" cy="233.1797" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="248" x="271" y="237.5986">WithDownServices(nb: int): ServiceManagerBuilder</text><ellipse cx="262" cy="247.0156" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="270" x="271" y="251.4346">WithServiceName(name: string): ServiceManagerBuilder</text><ellipse cx="262" cy="260.8516" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="116" x="271" y="265.2705">Build(): ServiceManager</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259" y="271.6875"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="319" x="271" y="279.1064">WithServices(nb: int, state: IServiceState): ServiceManagerBuilder</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259" y="285.5234"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="177" x="271" y="292.9424">BuildTraceProvider(): TracerProvider</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259" y="299.3594"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="276" x="271" y="306.7783">CreateService(name: string, state IServiceState): Service</text><!--MD5=[3cc57796414fb256cad833b4029449dc]
+class DownState--><rect codeLine="6" fill="#F8F8FF" height="67.6719" id="DownState" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="307" x="306.5" y="767.5"/><ellipse cx="425.75" cy="783.5" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M428.5156,779.375 Q428.6719,779.1563 428.8594,779.0469 Q429.0469,778.9375 429.2656,778.9375 Q429.6406,778.9375 429.875,779.2031 Q430.1094,779.4531 430.1094,780.0625 L430.1094,781.5156 Q430.1094,782.125 429.875,782.3906 Q429.6406,782.6563 429.2656,782.6563 Q428.9219,782.6563 428.7188,782.4531 Q428.5156,782.2656 428.4063,781.75 Q428.3594,781.3906 428.1719,781.2031 Q427.8438,780.8281 427.2344,780.6094 Q426.625,780.3906 426,780.3906 Q425.2344,780.3906 424.5938,780.7188 Q423.9688,781.0469 423.4688,781.7969 Q422.9844,782.5469 422.9844,783.5781 L422.9844,784.6719 Q422.9844,785.9063 423.875,786.7344 Q424.7656,787.5469 426.3594,787.5469 Q427.2969,787.5469 427.9531,787.2969 Q428.3438,787.1406 428.7656,786.7031 Q429.0313,786.4375 429.1719,786.3594 Q429.3281,786.2813 429.5313,786.2813 Q429.8594,786.2813 430.1094,786.5469 Q430.375,786.7969 430.375,787.1406 Q430.375,787.4844 430.0313,787.8906 Q429.5313,788.4688 428.7344,788.7969 Q427.6563,789.25 426.3594,789.25 Q424.8438,789.25 423.6406,788.625 Q422.6563,788.125 421.9688,787.0625 Q421.2813,785.9844 421.2813,784.7031 L421.2813,783.5469 Q421.2813,782.2188 421.8906,781.0781 Q422.5156,779.9219 423.6094,779.3125 Q424.7031,778.6875 425.9375,778.6875 Q426.6719,778.6875 427.3125,778.8594 Q427.9688,779.0156 428.5156,779.375 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="60" x="446.25" y="788.4102">DownState</text><line style="stroke:#000000;stroke-width:1.5;" x1="307.5" x2="612.5" y1="799.5" y2="799.5"/><ellipse cx="317.5" cy="810.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="281" x="326.5" y="814.9189">Call(service: Service, nextService: Queue&lt;Service&gt;): void</text><ellipse cx="317.5" cy="824.3359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="326.5" y="828.7549">UpdateState(service: Service): void</text><!--MD5=[18eff2d7e5bdf005ee160d014c9ef7bb]
+class IServiceState--><rect codeLine="11" fill="#F8F8FF" height="67.6719" id="IServiceState" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="293" x="504.5" y="598"/><ellipse cx="610.25" cy="614" fill="#B4A7E5" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M611.2031,610.6406 L611.2031,617.2969 L612.9219,617.2969 Q613.5313,617.2969 613.7969,617.5313 Q614.0625,617.7656 614.0625,618.1563 Q614.0625,618.5313 613.7969,618.7656 Q613.5313,619 612.9219,619 L607.7813,619 Q607.1719,619 606.9063,618.7656 Q606.6406,618.5313 606.6406,618.1406 Q606.6406,617.7656 606.9063,617.5313 Q607.1719,617.2969 607.7813,617.2969 L609.5,617.2969 L609.5,610.6406 L607.7813,610.6406 Q607.1719,610.6406 606.9063,610.4063 Q606.6406,610.1719 606.6406,609.7813 Q606.6406,609.4063 606.9063,609.1719 Q607.1719,608.9375 607.7813,608.9375 L612.9219,608.9375 Q613.5313,608.9375 613.7969,609.1719 Q614.0625,609.4063 614.0625,609.7813 Q614.0625,610.1719 613.7969,610.4063 Q613.5313,610.6406 612.9219,610.6406 L611.2031,610.6406 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="73" x="630.75" y="618.9102">IServiceState</text><line style="stroke:#000000;stroke-width:1.5;" x1="505.5" x2="796.5" y1="630" y2="630"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="281" x="510.5" y="645.4189">Call(service: Service, nextService: Queue&lt;Service&gt;): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="510.5" y="659.2549">UpdateState(service: Service): void</text><!--MD5=[608327ce1e309b67806cedbb02c850bf]
+class NormalState--><rect codeLine="16" fill="#F8F8FF" height="81.5078" id="NormalState" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="198" x="511" y="937"/><ellipse cx="571.25" cy="953" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M574.0156,948.875 Q574.1719,948.6563 574.3594,948.5469 Q574.5469,948.4375 574.7656,948.4375 Q575.1406,948.4375 575.375,948.7031 Q575.6094,948.9531 575.6094,949.5625 L575.6094,951.0156 Q575.6094,951.625 575.375,951.8906 Q575.1406,952.1563 574.7656,952.1563 Q574.4219,952.1563 574.2188,951.9531 Q574.0156,951.7656 573.9063,951.25 Q573.8594,950.8906 573.6719,950.7031 Q573.3438,950.3281 572.7344,950.1094 Q572.125,949.8906 571.5,949.8906 Q570.7344,949.8906 570.0938,950.2188 Q569.4688,950.5469 568.9688,951.2969 Q568.4844,952.0469 568.4844,953.0781 L568.4844,954.1719 Q568.4844,955.4063 569.375,956.2344 Q570.2656,957.0469 571.8594,957.0469 Q572.7969,957.0469 573.4531,956.7969 Q573.8438,956.6406 574.2656,956.2031 Q574.5313,955.9375 574.6719,955.8594 Q574.8281,955.7813 575.0313,955.7813 Q575.3594,955.7813 575.6094,956.0469 Q575.875,956.2969 575.875,956.6406 Q575.875,956.9844 575.5313,957.3906 Q575.0313,957.9688 574.2344,958.2969 Q573.1563,958.75 571.8594,958.75 Q570.3438,958.75 569.1406,958.125 Q568.1563,957.625 567.4688,956.5625 Q566.7813,955.4844 566.7813,954.2031 L566.7813,953.0469 Q566.7813,951.7188 567.3906,950.5781 Q568.0156,949.4219 569.1094,948.8125 Q570.2031,948.1875 571.4375,948.1875 Q572.1719,948.1875 572.8125,948.3594 Q573.4688,948.5156 574.0156,948.875 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="69" x="591.75" y="957.9102">NormalState</text><line style="stroke:#000000;stroke-width:1.5;" x1="512" x2="708" y1="969" y2="969"/><ellipse cx="522" cy="980" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="89" x="531" y="984.4189">this(isStable: bool)</text><ellipse cx="522" cy="993.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="531" y="998.2549">UpdateState(service: Service): void</text><polygon fill="#FFFF44" points="522,1002.6719,526,1006.6719,522,1010.6719,518,1006.6719" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="531" y="1012.0908">GenerateLatency(): void</text><!--MD5=[ba09bcea06a1e6e6aafa51624f9ca075]
+class UpState--><rect codeLine="28" fill="#F8F8FF" height="117.1797" id="UpState" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="307" x="688.5" y="743"/><ellipse cx="815.75" cy="759" fill="#A9DCDF" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M817.9375,760.7656 L813.7969,760.7656 L813.375,761.7969 L813.7969,761.7969 Q814.4063,761.7969 814.6719,762.0313 Q814.9375,762.2656 814.9375,762.6563 Q814.9375,763.0313 814.6719,763.2656 Q814.4063,763.5 813.7969,763.5 L811.5,763.5 Q810.8906,763.5 810.6406,763.2656 Q810.375,763.0313 810.375,762.6406 Q810.375,762.2656 810.6563,762.0313 Q810.9219,761.7813 811.5469,761.7969 L814.2188,755.1406 L813.1094,755.1406 Q812.5,755.1406 812.2344,754.9063 Q811.9688,754.6719 811.9688,754.2813 Q811.9688,753.9063 812.2344,753.6719 Q812.5,753.4375 813.1094,753.4375 L816.7813,753.4375 L820.1719,761.7969 Q820.7656,761.7969 820.9531,761.9375 Q821.3438,762.2031 821.3438,762.6563 Q821.3438,763.0313 821.0781,763.2656 Q820.8281,763.5 820.2188,763.5 L817.9219,763.5 Q817.3125,763.5 817.0469,763.2656 Q816.7813,763.0313 816.7813,762.6406 Q816.7813,762.2656 817.0469,762.0313 Q817.3125,761.7969 817.9219,761.7969 L818.3438,761.7969 L817.9375,760.7656 Z M817.2188,759.0625 L815.8594,755.6875 L814.4844,759.0625 L817.2188,759.0625 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="44" x="836.25" y="763.9102">UpState</text><line style="stroke:#000000;stroke-width:1.5;" x1="689.5" x2="994.5" y1="775" y2="775"/><polygon fill="none" points="699.5,782,695.5,788,703.5,788" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="64" x="708.5" y="790.4189">IsStable: bool</text><line style="stroke:#000000;stroke-width:1.5;" x1="689.5" x2="994.5" y1="796.8359" y2="796.8359"/><ellipse cx="699.5" cy="807.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="89" x="708.5" y="812.2549">this(isStable: bool)</text><ellipse cx="699.5" cy="821.6719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="281" x="708.5" y="826.0908">Call(service: Service, nextService: Queue&lt;Service&gt;): void</text><ellipse cx="699.5" cy="835.5078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="93" x="708.5" y="839.9268">UpdateState(): void</text><polygon fill="#FFFF44" points="699.5,844.3438,703.5,848.3438,699.5,852.3438,695.5,848.3438" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="118" x="708.5" y="853.7627">GenerateLatency(): void</text><!--MD5=[d153ef6ecaa4653fe170d946d35272b2]
+class SlowState--><rect codeLine="22" fill="#F8F8FF" height="81.5078" id="SlowState" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="198" x="784" y="937"/><ellipse cx="851.25" cy="953" fill="#6495ED" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><path d="M854.0156,948.875 Q854.1719,948.6563 854.3594,948.5469 Q854.5469,948.4375 854.7656,948.4375 Q855.1406,948.4375 855.375,948.7031 Q855.6094,948.9531 855.6094,949.5625 L855.6094,951.0156 Q855.6094,951.625 855.375,951.8906 Q855.1406,952.1563 854.7656,952.1563 Q854.4219,952.1563 854.2188,951.9531 Q854.0156,951.7656 853.9063,951.25 Q853.8594,950.8906 853.6719,950.7031 Q853.3438,950.3281 852.7344,950.1094 Q852.125,949.8906 851.5,949.8906 Q850.7344,949.8906 850.0938,950.2188 Q849.4688,950.5469 848.9688,951.2969 Q848.4844,952.0469 848.4844,953.0781 L848.4844,954.1719 Q848.4844,955.4063 849.375,956.2344 Q850.2656,957.0469 851.8594,957.0469 Q852.7969,957.0469 853.4531,956.7969 Q853.8438,956.6406 854.2656,956.2031 Q854.5313,955.9375 854.6719,955.8594 Q854.8281,955.7813 855.0313,955.7813 Q855.3594,955.7813 855.6094,956.0469 Q855.875,956.2969 855.875,956.6406 Q855.875,956.9844 855.5313,957.3906 Q855.0313,957.9688 854.2344,958.2969 Q853.1563,958.75 851.8594,958.75 Q850.3438,958.75 849.1406,958.125 Q848.1563,957.625 847.4688,956.5625 Q846.7813,955.4844 846.7813,954.2031 L846.7813,953.0469 Q846.7813,951.7188 847.3906,950.5781 Q848.0156,949.4219 849.1094,948.8125 Q850.2031,948.1875 851.4375,948.1875 Q852.1719,948.1875 852.8125,948.3594 Q853.4688,948.5156 854.0156,948.875 Z " fill="#000000"/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="55" x="871.75" y="957.9102">SlowState</text><line style="stroke:#000000;stroke-width:1.5;" x1="785" x2="981" y1="969" y2="969"/><ellipse cx="795" cy="980" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="89" x="804" y="984.4189">this(isStable: bool)</text><ellipse cx="795" cy="993.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="804" y="998.2549">UpdateState(service: Service): void</text><polygon fill="#FFFF44" points="795,1002.6719,799,1006.6719,795,1010.6719,791,1006.6719" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="804" y="1012.0908">GenerateLatency(): void</text><!--MD5=[83cfd6a86e4f95309ed5f8cff41fcef2]
+reverse link IServiceState to DownState--><path d="M597.89,679.58 C566.03,707.51 526.28,742.37 497.66,767.48 " fill="none" id="IServiceState-backto-DownState" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="593.61,674.02,613.26,666.09,602.84,684.54,593.61,674.02" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[6f0e96808495e7315346411e747b48fb]
+reverse link UpState to NormalState--><path d="M749.02,872.43 C719.93,894.32 688.82,917.71 663.43,936.81 " fill="none" id="UpState-backto-NormalState" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="745.2,866.55,765.39,860.12,753.62,877.74,745.2,866.55" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[3db607ec52ed5b13125135d92316a7cc]
+reverse link UpState to SlowState--><path d="M860.16,879.81 C864.79,899.49 869.57,919.85 873.56,936.81 " fill="none" id="UpState-backto-SlowState" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="none" points="853.3,881.19,855.54,860.12,866.93,877.99,853.3,881.19" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[e129ca4a230f22a8b8c255a7adafd332]
+reverse link IServiceState to UpState--><path d="M703.87,679.36 C726.22,698.97 752.5,722.02 776.11,742.71 " fill="none" id="IServiceState-backto-UpState" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="699.16,684.54,688.74,666.09,708.39,674.02,699.16,684.54" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[ce6e64da9238c54c6783b0340e76bcc7]
+reverse link Service to IServiceState--><path codeLine="44" d="M651,520.44 C651,547.1 651,576.17 651,597.8 " fill="none" id="Service-backto-IServiceState" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#808080" points="651,507.18,647,513.18,651,519.18,655,513.18,651,507.18" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[905beca2fcb68ae9bc1aa2b7f2508741]
+reverse link ServiceManager to Service--><path codeLine="52" d="M830.08,273.99 C793.25,309.68 746.77,354.71 710.4,389.95 " fill="none" id="ServiceManager-backto-Service" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="839.71,264.67,832.6178,265.9743,831.094,273.0225,838.1862,271.7183,839.71,264.67" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[c08947b79af006a68c72457cc015574c]
+reverse link ServiceManagerBuilder to Service--><path codeLine="67" d="M530.11,322.6 C552.6,345.84 575.52,369.51 595.26,389.91 " fill="none" id="ServiceManagerBuilder-backto-Service" style="stroke:#808080;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="520.84,313.03,522.1441,320.1222,529.1923,321.6462,527.8882,314.554,520.84,313.03" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[9a1270927a156533e1cdf556af4e933f]
+link ServiceManagerBuilder to ServiceManager--><path codeLine="68" d="M599.23,213 C641.32,213 686.16,213 727.78,213 " fill="none" id="ServiceManagerBuilder-to-ServiceManager" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#808080" points="732.84,213,723.84,209,727.84,213,723.84,217,732.84,213" style="stroke:#808080;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="637.5" y="206.4951">«creates»</text><!--MD5=[aa4603014d7428da12c01a66282a43d3]
+link Program to ServiceManagerBuilder--><path codeLine="74" d="M175.67,213 C195.16,213 211,213 211,213 C211,213 226.33,213 245.38,213 " fill="none" id="Program-to-ServiceManagerBuilder" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#808080" points="250.84,213,241.84,209,245.84,213,241.84,217,250.84,213" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[1624819606dca574e0f881ba094f0294]
+link Program to ServiceManager--><path codeLine="75" d="M121.59,185.66 C155.15,133.52 225,25 225,25 C225,25 262.5,6 262.5,6 C262.5,6 599.5,6 599.5,6 C599.5,6 637,25 637,25 C637,25 742.26,102.6 817.52,158.09 " fill="none" id="Program-to-ServiceManager" style="stroke:#808080;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#808080" points="821.98,161.38,817.1114,152.8186,817.9562,158.4121,812.3627,159.2568,821.98,161.38" style="stroke:#808080;stroke-width:1.0;"/><!--MD5=[e6e584ad0d687ea6920a072671648859]
+@startuml classdiagram
+!include ./commons.style
+
+package MicroservicesSimulator {
+    package Services {
+        package States {
+            class DownState implements IServiceState{
+                + Call(service: Service, nextService: Queue<Service>): void
+                + UpdateState(service: Service): void
+            }
+
+            interface IServiceState{
+                Call(service: Service, nextService: Queue<Service>): void
+                UpdateState(service: Service): void
+            }
+
+            class NormalState extends UpState{
+                + this(isStable: bool)
+                + UpdateState(service: Service): void
+                # GenerateLatency(): void
+            }
+
+            class SlowState extends UpState{
+                + this(isStable: bool)
+                + UpdateState(service: Service): void
+                # GenerateLatency(): void
+            }
+
+            abstract class UpState implements IServiceState{
+                ~ IsStable: bool
+                + this(isStable: bool)
+                + Call(service: Service, nextService: Queue<Service>): void
+                {abstract} + UpdateState(): void
+                {abstract} # GenerateLatency(): void
+            }
+        }
+
+        class Service {
+            + Name: string
+            ~ State: IServiceState
+            + this(name: string)
+            + this(name: string, state: IServiceState)
+            + Call(services: Queue<Service>): void
+        }
+        Service*- -IServiceState
+
+        class ServiceManager {
+            - _services: List<Service>
+            - _traceProvider: TracerProvider
+            + this(services: List<Service>, tracerProvider: TracerProvider)
+            + Run(iteration: int): void
+        }
+        ServiceManager o- - Service
+
+        class ServiceManagerBuilder {
+            - _services: List<Service>
+            - _serviceName: string
+            + this()
+            + WithNormalServices(nb: int, isStable: bool): ServiceManagerBuilder
+            + WithSlowServices(nb: int, isStable: bool): ServiceManagerBuilder
+            + WithDownServices(nb: int): ServiceManagerBuilder
+            + WithServiceName(name: string): ServiceManagerBuilder
+            + Build(): ServiceManager
+            - WithServices(nb: int, state: IServiceState): ServiceManagerBuilder
+            - BuildTraceProvider(): TracerProvider
+            - CreateService(name: string, state IServiceState): Service
+        }
+        ServiceManagerBuilder o- - Service
+        ServiceManagerBuilder.>ServiceManager: <<creates>>
+    }
+
+    class Program {
+        + {static} Main(args: string[]): void
+    }
+    Program.>ServiceManagerBuilder
+    Program.>ServiceManager
+}
+
+@enduml
+
+@startuml classdiagram
+
+skinparam nodesep 75
+skinparam ranksep 75
+hide empty members
+
+skinparam noteFontSize 10
+skinparam noteFontName Courier
+
+skinparam monochrome  false
+skinparam shadowing   false
+skinparam roundcorner 10
+skinparam linetype polyline
+
+skinparam class {
+    BackgroundColor GhostWhite
+    ArrowColor      Gray
+    BorderColor     Black
+    fontColor       CornFlowerBlue
+}
+
+skinparam state {
+    BackgroundColor GhostWhite
+    ArrowColor      Gray
+    BorderColor     Black
+    fontColor       CornFlowerBlue
+}
+
+skinparam object {
+    BackgroundColor GhostWhite
+    ArrowColor      Gray
+    BorderColor     Black
+}
+
+skinparam package<<Layout>> {
+  borderColor         Transparent
+  backgroundColor     Transparent
+  fontColor           Transparent
+  stereotypeFontColor Transparent
+}
+
+skinparam sequence {
+	ArrowColor                  Gray
+  LifeLineBorderColor         CornFlowerBlue
+  LifeLineBackgroundColor     GhostWhite
+	ParticipantBorderColor      CornFlowerBlue
+	ParticipantBackgroundColor  GhostWhite
+  ActorBorderColor            CornFlowerBlue
+	ActorBackgroundColor        GhostWhite
+  BoxBorderColor         CornFlowerBlue
+  BoxBackgroundColor         GhostWhite
+}
+
+skinparam stereotypeCBackgroundColor CornflowerBlue
+
+hide footbox
+hide empty members
+
+skinparam note {
+ BackgroundColor GhostWhite
+ BorderColor         CornFlowerBlue
+}
+
+package MicroservicesSimulator {
+    package Services {
+        package States {
+            class DownState implements IServiceState{
+                + Call(service: Service, nextService: Queue<Service>): void
+                + UpdateState(service: Service): void
+            }
+
+            interface IServiceState{
+                Call(service: Service, nextService: Queue<Service>): void
+                UpdateState(service: Service): void
+            }
+
+            class NormalState extends UpState{
+                + this(isStable: bool)
+                + UpdateState(service: Service): void
+                # GenerateLatency(): void
+            }
+
+            class SlowState extends UpState{
+                + this(isStable: bool)
+                + UpdateState(service: Service): void
+                # GenerateLatency(): void
+            }
+
+            abstract class UpState implements IServiceState{
+                ~ IsStable: bool
+                + this(isStable: bool)
+                + Call(service: Service, nextService: Queue<Service>): void
+                {abstract} + UpdateState(): void
+                {abstract} # GenerateLatency(): void
+            }
+        }
+
+        class Service {
+            + Name: string
+            ~ State: IServiceState
+            + this(name: string)
+            + this(name: string, state: IServiceState)
+            + Call(services: Queue<Service>): void
+        }
+        Service*- -IServiceState
+
+        class ServiceManager {
+            - _services: List<Service>
+            - _traceProvider: TracerProvider
+            + this(services: List<Service>, tracerProvider: TracerProvider)
+            + Run(iteration: int): void
+        }
+        ServiceManager o- - Service
+
+        class ServiceManagerBuilder {
+            - _services: List<Service>
+            - _serviceName: string
+            + this()
+            + WithNormalServices(nb: int, isStable: bool): ServiceManagerBuilder
+            + WithSlowServices(nb: int, isStable: bool): ServiceManagerBuilder
+            + WithDownServices(nb: int): ServiceManagerBuilder
+            + WithServiceName(name: string): ServiceManagerBuilder
+            + Build(): ServiceManager
+            - WithServices(nb: int, state: IServiceState): ServiceManagerBuilder
+            - BuildTraceProvider(): TracerProvider
+            - CreateService(name: string, state IServiceState): Service
+        }
+        ServiceManagerBuilder o- - Service
+        ServiceManagerBuilder.>ServiceManager: <<creates>>
+    }
+
+    class Program {
+        + {static} Main(args: string[]): void
+    }
+    Program.>ServiceManagerBuilder
+    Program.>ServiceManager
+}
+
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 17:16:42 CET 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: FR
+--></g></svg>

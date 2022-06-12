@@ -6,14 +6,11 @@ namespace MicroservicesSimulator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
             var serviceManagerBuilder = new ServiceManagerBuilder();
             var serviceManager = serviceManagerBuilder
-                // .WithDownServices(1)
-                .WithNormalServices(10)
+                .WithNormalServices(6)
                 .Build();
-            serviceManager.Run(1);
+            serviceManager.Run(50);
         }
     }
 }

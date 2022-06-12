@@ -1,4 +1,5 @@
-version: "2"
+version: '3.7'
+
 services:
   zipkin:
     image: openzipkin/zipkin
@@ -15,4 +16,18 @@ services:
       - "16686:16686"
       - "14268:14268"
       - "9412:9411" 
+    networks:
+      - grafana
     image: jaegertracing/all-in-one:1.6
+  grafana:
+    ports:
+      - 3000:3000
+    networks:
+      - grafana
+    image: grafana/grafana-oss:latest
+    depends_on:
+      - jaeger
+
+networks:
+  grafana:
+    driver: bridge

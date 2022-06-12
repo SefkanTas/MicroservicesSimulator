@@ -14,20 +14,10 @@ public class Service
     public string Name { get; set; }
     internal IServiceState State;
 
-    // private ILogger _logger;
-
     public Service(string name, IServiceState state)
     {
         Name = name;
         State = state;
-        // State = state;
-        // _tracerProvider = BuildTraceProvider();
-
-        // var loggerFactory = LoggerFactory.Create(build => 
-        //     build.AddOpenTelemetry()
-        // );
-        // _logger = loggerFactory.CreateLogger<Service>();
-        // _logger.LogInformation("yes tout va bien");
     }
 
     public Service(string name)
@@ -39,10 +29,6 @@ public class Service
 
     public void Call(Queue<Service>? services)
     {
-        // var myActivitySource = new ActivitySource(Name);
-        // Thread.Sleep(GetRandomLantency());
-        // using var activity = myActivitySource.StartActivity($"Span from {Name}");
-
         if (services == null)
         {
             return;
@@ -55,18 +41,5 @@ public class Service
         {
             State.Call(this, services);
         }
-    }
-
-    private TracerProvider BuildTraceProvider()
-    {
-        return Sdk.CreateTracerProviderBuilder()
-            .AddSource(Name)
-            .SetResourceBuilder(
-                ResourceBuilder.CreateDefault()
-                    .AddService(serviceName: Name))
-            .AddZipkinExporter()
-            .AddJaegerExporter()
-            .AddConsoleExporter()
-            .Build();
     }
 }

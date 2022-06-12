@@ -1,0 +1,79 @@
+@startuml classdiagram
+!include ./commons.style
+
+package MicroservicesSimulator {
+    package Services {
+        package States {
+            class DownState implements IServiceState{
+                + Call(service: Service, nextService: Queue<Service>): void
+                + UpdateState(service: Service): void
+            }
+
+            interface IServiceState{
+                Call(service: Service, nextService: Queue<Service>): void
+                UpdateState(service: Service): void
+            }
+
+            class NormalState extends UpState{
+                + this(isStable: bool)
+                + UpdateState(service: Service): void
+                # GenerateLatency(): void
+            }
+
+            class SlowState extends UpState{
+                + this(isStable: bool)
+                + UpdateState(service: Service): void
+                # GenerateLatency(): void
+            }
+
+            abstract class UpState implements IServiceState{
+                ~ IsStable: bool
+                + this(isStable: bool)
+                + Call(service: Service, nextService: Queue<Service>): void
+                {abstract} + UpdateState(): void
+                {abstract} # GenerateLatency(): void
+            }
+        }
+
+        class Service {
+            + Name: string
+            ~ State: IServiceState
+            + this(name: string)
+            + this(name: string, state: IServiceState)
+            + Call(services: Queue<Service>): void
+        }
+        Service*--IServiceState
+
+        class ServiceManager {
+            - _services: List<Service>
+            - _traceProvider: TracerProvider
+            + this(services: List<Service>, tracerProvider: TracerProvider)
+            + Run(iteration: int): void
+        }
+        ServiceManager o-- Service
+
+        class ServiceManagerBuilder {
+            - _services: List<Service>
+            - _serviceName: string
+            + this()
+            + WithNormalServices(nb: int, isStable: bool): ServiceManagerBuilder
+            + WithSlowServices(nb: int, isStable: bool): ServiceManagerBuilder
+            + WithDownServices(nb: int): ServiceManagerBuilder
+            + WithServiceName(name: string): ServiceManagerBuilder
+            + Build(): ServiceManager
+            - WithServices(nb: int, state: IServiceState): ServiceManagerBuilder
+            - BuildTraceProvider(): TracerProvider
+            - CreateService(name: string, state IServiceState): Service
+        }
+        ServiceManagerBuilder o-- Service
+        ServiceManagerBuilder.>ServiceManager: <<creates>>
+    }
+
+    class Program {
+        + {static} Main(args: string[]): void
+    }
+    Program.>ServiceManagerBuilder
+    Program.>ServiceManager
+}
+
+@enduml
